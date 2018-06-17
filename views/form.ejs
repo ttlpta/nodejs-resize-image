@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%if (typeof message != 'undefined') { %>
+      <h1><%= message %></h1>
+    <% } %>
+    <form method="post" enctype="multipart/form-data">
+      Image Url:<br>
+      <input type="text" name="imageurl" placeholder="Image Url">
+      <br>
+      <br>
+      <br>
+      - OR upload an image -
+      <br>
+      <br>
+      <br>
+      File:<br>
+      <input type="file" name="avatar">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form> 
+  </body>
+</html>
